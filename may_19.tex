@@ -1,0 +1,143 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry} 
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 65}
+\assignment{HW 3}
+\duedate{Thursday, May 19, 2016}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\m}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{6.4.\{1, 2, 8, 9, 15, 27\}, 6.5.\{3, 7, 14, 22\}}
+
+\begin{problem}[6.4.1]
+    In Exercises 1-12, determine whether $T$ is a linear transformation.\\\\
+    $T:M_{22}\to M_{22}$ defined by\\\\
+    $T\m{a&b\\c&d} = \m{a+b&0\\0&c+d}$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.2]
+    In Exercises 1-12, determine whether $T$ is a linear transformation.\\\\
+    $T:M_{22}\to M_{22}$ defined by\\\\
+    $T\m{w&x\\y&z} = \m{1&w-z\\x-y&1}$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.8]
+    In Exercises 1-12, determine whether $T$ is a linear transformation.\\\\
+    $T:\mathscr{P}_2\to\mathscr{P}_2$ defined by
+    $T(a+bx+cx^2)=(a+1)+(b+1)x+(c+1)x^2$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.9]
+    In Exercises 1-12, determine whether $T$ is a linear transformation.\\\\
+    $T:\mathscr{P}_2\to\mathscr{P}_2$ defined by
+    $T(a+ bx+cx^2)=a+b(x+1)+b(x+1)^2$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.15]
+    Let $T:\RR^2\to\mathscr{P}_2$ be a linear transformation for which
+    \[
+        	T\m{1\\1}=1-2x\quad\text{and}\quad T\m{3\\-1}=x+2x^2
+    \]
+    Find $T\m{-7\\9}$ and $T\m{a\\b}$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.27]
+    Define linear transformations $S:\mathscr{P}_n\to\mathscr{P}_n$
+    and $T: \mathscr{P}_n\to\mathscr{P}_n$ by
+    \[
+        S(p(x))=p(x+1)\quad\text{and}\quad T(p(x))=p'(x)
+    \]
+    Find $(S\circ T)(p(x))$ and $(T\circ S)(p(x))$. [\textit{Hint}: Remember the
+    Chain Rule.]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.3]
+    Let $T:\mathscr{P}_2\to\mathbb{R}^2$ be the linear transformation defined by
+    \[
+        T(a+bx+cx^2)=\m{a-b\\b+c}
+    \]
+    \begin{enumerate}
+        \item Which, if any, of the following polynomials are in $\ker(T)$?\\
+            \textbf{(i)} $1+x$\quad\textbf{(ii)} $x-x^2$\quad
+            \textbf{(iii)} $1+x-x^2$
+        \item Which, if any, of the following polynomials are in range$(T)$?\\\\
+            \textbf{(i)}$\m{0\\0}$\quad\textbf{(ii)}$\m{1\\0}$\quad
+            \textbf{(iii)}$\m{0\\1}$
+        \item Describe $\ker(T)$ and range$(T)$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.7]
+    In Exercises 5-8, find bases for the kernel and range of the
+    linear transformations $T$ in the indicated exercises. In each
+    case, state the nullity and rank of $T$ and verify the Rank
+    Theorem.\\\\
+    Exercise 3
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.14]
+    In Exercises 9-14, find either the nullity or the rank of $T$ and
+    then use the Rank Theorem to find the other.\\\\
+    $T:M_{33}\to M_{33}$ defined by $T(A)=A-A^T$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.22]
+    In Exercises 21-26, determine whether $V$ and $W$ are
+    isomorphic. If they are, give an explicit isomorphism $T:V\to W$.\\\\
+    $V=S_3$ (symmetric $3\times3$ matrices), $W=U_3$ (upper-triangular
+    $3\times3$ matrices)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
