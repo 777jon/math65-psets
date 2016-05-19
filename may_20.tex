@@ -1,0 +1,142 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry} 
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 65}
+\assignment{HW 4}
+\duedate{Friday, May 20, 2016}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\m}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\df}[3]{\frac{d^{#1}#2}{d#3^{#1}}}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{Additional Problem \#1, 6.5.\{33, 35\}, 6.6.\{4, 12, 22\}, 6.4.30, 6.6.32}
+
+\begin{problem}[Additional Problem \#1]
+    Consider the vector space $C^n$, the set of all real-valued
+    functions $f(x)$ for which $f',f'',...,f^{(n)}$ exist and are
+    continuous, over $\RR$. Show the differential operator
+    \[
+        \mathcal{L}[y(x)]=a_n(x)\df{n}{y}{x}+a_{n-1}(x)\df{n-1}{y}{x}+
+        \dots+a_1(x)\df{}{y}{x}+a_0(x)y(x)
+    \]
+    is a linear transformation, where $a_0(x),...,a_n(x)$ are also
+    $C^n$ functions.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.33]
+    Let $S:V\to W$ and $T:U\to V$ be linear transformations.
+    \begin{enumerate}
+        \item Prove that if $S$ and $T$ are both one-to-one, so is $S\circ T$.
+        \item Prove that if $S$ and $T$ are both onto, so it $S\circ T$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.5.35]
+    Let $T:V\to W$ be a linear transformation between two
+    finite-dimensional vector spaces.
+    \begin{enumerate}
+        \item Prove that if $\dim V<\dim W$, then $T$ cannot be onto.
+        \item Prove that if $\dim V>\dim W$, then $T$ cannot be one-to-one.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.6.4]
+    In Exercises 1-12, find the matrix $[T]_{C\leftarrow B}$ of the
+    linear transformation $T:V\to W$ with respect to the bases $B$ and
+    $C$ of $V$ and $W$, respectively. Verify Theorem 6.26 for the
+    vector \textbf{v} by computing $T(\textbf{v})$ directly and using
+    the theorem.
+    \begin{align*}
+        T&:\mathscr{P}_2\to\mathscr{P}_2\text{ defined by }T(p(x))=p(x+2),\\
+        \mathcal{B}&=\{1,x+2,(x+2)^2\},\\\mathcal{C}&=\{1,x,x^2\},\\
+        \textbf{v}&=p(x)=a+bx+cx^2
+    \end{align*}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.6.12]
+    In Exercises 1-12, find the matrix $[T]_{C\leftarrow B}$ of the
+    linear transformation $T:V\to W$ with respect to the bases $B$ and
+    $C$ of $V$ and $W$, respectively. Verify Theorem 6.26 for the
+    vector \textbf{v} by computing $T(\textbf{v})$ directly and using
+    the theorem.
+    \begin{align*}
+        T&:M_{22}\to M_{22}\text{ defined by }T(A)=A-A^T,\\\mathcal{B}&=
+        \mathcal{C}=\{E_{11},E_{12},E_{21},E_{22}\},\\\textbf{v}&=A=\m{a&b\\c&d}
+    \end{align*}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.6.22]
+    In Exercises 19-26, determine whether the linear transformation
+    $T$ is invertible by considering its matrix with respect to the
+    standard bases. If $T$ is invertible, use Theorem 6.28 and the
+    method of Example 6.82 to find $T^{-1}$.
+    \[
+        T:\mathscr{P}_2\to\mathscr{P}_2\text{ defined by }T(p(x))=p'(x)
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.4.30]
+    In Exercises 29 and 30, verify that $S$ and $T$ are inverses.
+    \begin{align*}
+        S&:\mathscr{P}_1\to\mathscr{P}_1\text{ defined by }S(a+bx)=(-4a+b)+2ax
+        \quad\text{and}\\
+        T&:\mathscr{P}_1\to\mathscr{P}_1\text{ defined by }T(a+bx)=b/2+(a+2b)x
+    \end{align*}
+    In addition, calculate $[S]_B$ and $[T]_B$ for some basis $\mathcal{B}$
+    (of your choice) for the vector space in question. Then show that the
+    matrices are the inverses of each other.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6.6.32]
+    In Exercises 31-36, a linear transformation $T:V\to V$ is
+    given. If possible, find a basis $C$ for $V$ such that the matrix
+    $[T]_C$ of $T$ with respect to $C$ is diagonal.
+    \[
+        T:\RR^2\to\RR^2\text{ defined by }T\m{a\\b}=\m{a-b\\a+b}
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
