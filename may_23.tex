@@ -1,0 +1,134 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 65}
+\assignment{HW 5}
+\duedate{Monday, May 23, 2016}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\m}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{6.1.47, 6.3.16, 6.4.\{4, 21\}, 6.5.12, 6.6.2, 4.4.22, EC: 6.2.33}
+
+\noindent
+\emph{Intructor's Note:} I recommend that you also look at the Chapter Review on
+pages 527-528 of Poole and skim the problems to see if there are any concepts or
+problems that seem challenging to you. Try some of these problems for more
+practice.
+
+\begin{problem}[Poole 6.1.47]
+    Let $V$ be a vector space with subspaces $U$ and $W$. Give an
+    example with $V=\RR^2$ to show that $U\cup W$ need not be a
+    subspace of $V$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 6.3.16]
+    Let $\mathcal{B}$ and $\mathcal{C}$ be bases for
+    $\mathscr{P}_2$. If $\mathcal{B}=\{x,1+x,1-x+x^2\}$ and the
+    change-of-basis matrix from $\mathcal{B}$ to $\mathcal{C}$ is
+    \[
+        P_{\mathcal{C}\leftarrow\mathcal{B}}=\m{1&0&0\\0&2&1\\-1&1&1}
+    \]
+    find $\mathcal{C}$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 6.4.4]
+    In Exercises 1-12, determine whether $T$ is a linear transformation.
+    \[
+        T:M_{nn}\to M_{nn}\text{ defined by }T(A)=AB-BA\text{, where }B
+        \text{ is a fixed }n\times n\text{ matrix}
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 6.4.21]
+    Prove Theorem 6.14(b).
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 6.5.12]
+    In Exercises 9-14, find either the nullity or the rank of $T$ and
+    then use the Rank Theorem to find the other.
+    \[
+        T:M_{22}\to M_{22}\text{ defined by }T(A)=AB-BA\text{, where }
+        B=\m{1&1\\0&1}
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 6.6.2]
+    In Exercises 1-12, find the matrix
+    $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$ of the linear
+    transformation $T:V\to W$ with respect to the bases $\mathcal{B}$
+    and $\mathcal{C}$ of $V$ and $W$, respectively. Verify Theorem
+    6.26 for the vector \textbf{v} by computing $T(\textbf{v})$
+    directly and using the theorem.
+    \begin{align*}
+        T&:\mathscr{P}_1\to\mathscr{P}_1\text{ defined by}\\T&(a+bx)=b-ax,\\
+        \mathcal{B}&=\{1+x,1-x\},\\\mathcal{C}&=\{1,x\},\\\textbf{v}&=p(x)=4+2x
+    \end{align*}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Poole 4.4.22]
+    In Exercises 16-23, use the method of Example 4.29 to compute the
+    indicated power of the matrix.
+    \[
+        \m{2&0&1\\1&1&1\\1&0&2}^k
+    \]
+    (assume that $k$ is a positive integer)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Extra Credit: Poole 6.2.33]
+    Let $\{\textbf{u}_1,...,\textbf{u}_m\}$ be a set of vectors in an
+    $n$-dimensional vector space $V$ and let $\mathcal{B}$ be a basis
+    for $V$. Let
+    $S=\{[\textbf{u}_1]_{\mathcal{B}},...,[\textbf{u}_m]_{\mathcal{B}}\}$
+    be on the set of coordinate vectors of
+    $\{\textbf{u}_1,...,\textbf{u}_m\}$ with respect to
+    $\mathcal{B}$. Prove that span$(\textbf{u}_1,...,\textbf{u}_m)=V$
+    if and only if span$(S)=\RR^n$.\\\\
+    (Remember that to prove an if-and-only-if theorem, you need to
+    prove both directions.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
