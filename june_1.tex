@@ -32,18 +32,18 @@
             these nullclines to determine the regions of the plane in
             which the solution orbits would be moving left, right, up,
             and down.
-        \item Locate all the equilibrium points of the system.
-        \item For each equilibrium point, (i) write down the
-            linearized differential equation about that point, (ii)
-            calculate the eigenvalues of the linearized system, (iii)
-            use the eigenvalues to determine the behavior
-            (unstable/stable, node/spiral, etc.) of the linearized
-            system near each point.
+        \item Locate all the equilibrium points of the system by
+            finding the intersections of the nullclines.
         \item Print out a phase plane portrait of the DE in the
             rectangle $|x|\leq3,|y|\leq3$ using either
             pplane\footnotemark or ODEToolkit\footnotemark.
             Explain how this phase plane portrait is consistent with all
             of the observations you've made on this problem.
+        \item For each equilibrium point you found in part (b), use
+            the phase plane portrait to determine if it looks like it is
+            asymptotically stable, neutrally stable or unstable, and
+            whether you have a node, saddle point, or spiral of some
+            sort.
     \end{enumerate}
     \footnotetext{\textsuperscript{1}\url{
         http://math.rice.edu/~dfield/dfpp.html}}
@@ -98,7 +98,7 @@
 \begin{problem}[4]
     A $m$~kg mass is suspended at the end of a (massless) rod with
     length $L$~meters. The other end of the rod is fixed at a pivot
-    point. This arrangement that leads to a simple pendulum that
+    point. This arrangement leads to a simple pendulum that
     swings in a plane. Let $\theta(t)$ be the angular position of the
     pendulum, measured so that the resting position of the pendulum
     corresponds to $\theta=0$ and positive $\theta$ is in the
@@ -171,13 +171,7 @@
     In this problem, you will complete the local stability analysis of
     this system of DEs.
     \begin{enumerate}
-        \item In all four cases, there is always one boring
-            equilibrium point in which both populations go extinct
-            ($x=y=0$). Calculate the Jacobian matrix for the DEs and
-            evaluate it at this equilibrium point. What do the
-            eigenvalues of this matrix tell you about the stability of
-            the linearized system near this equilibrium point?
-        \item In all four cases, there are two other equilibrium
+        \item In all four cases, there are at least two equilibrium
             points: one in which the $x$-population goes extinct but the
             other doesn't, and one in which the $y$-population goes
             extinct but the other doesn't.  Calculate the locations of
@@ -185,34 +179,28 @@
         \item Sketch the nullclines for case 1 and locate the $x$- and
             $y$-intercepts of both nullclines.  What two inequalities
             must hold true for the $x$-nullcline to be completely below
-            the $y$-nullcline in the first quadrant?  Calculate the
-            eigenvalues of $D\bf{f}(\bf{x}_{\text{eq}})$ for
-            both equilibrium points you found in part (b). What do these
-            eigenvalues tell you about the stability of the linearized
-            system near these equilibrium points?
-        \item Repeat part (c) for case 2.
+            the $y$-nullcline in the first quadrant?
+        \item Repeat part (b) for case 2.
         \item Determine the pairs of inequalities that must hold true
             to get cases 3 and 4. (Refer to the lecture notes to see how
             the nullclines intersect each other.)
+        \item Consider the parameter values $r_1=a_1=b_1=a_2=1$,
+            $r_2=1/2$, and $b_2=1/4$. According to your work from part
+            (d), which case does this set of parameter values fall
+            under? Locate the equilibrium point for which $x>0$ and
+            $y>0$. Use a computer-generated phase plane portrait to
+            determine if it looks like it is asymptotically stable,
+            neutrally stable or unstable, and whether you have a node,
+            saddle point, or spiral of some sort.
     \end{enumerate}
 \end{problem}
 \begin{problem}[5 cont.]
     \begin{enumerate}
-        \setcounter{enumi}{6}
-        \item Consider the parameter values $r_1=a_1=b_1=a_2=1$,
-            $r_2=1/2$, and $b_2=1/4$. According to your work from part
-            (e), which case does this set of parameter values fall
-            under? Locate the equilibrium point for which $x>0$ and
-            $y>0$. Calculate the eigenvalues of
-            $D\bf{f}(\bf{x}_{\text{eq}})$ for this equilibrium
-            point to determine the behavior of solutions near it. (It is
-            easier to use the parameter values that are given rather
-            than perform the calculation for a general set of parameter
-            values.)
-        \item (Extra credit) For an arbitrary set of parameters in
-            cases 3 and 4, calculate the location of equilibrium point
-            for which $x>0$ and $y>0$ and determine the stability of the
-            linearized system about this equilibrium point.
+        \setcounter{enumi}{5}
+        \item Locate the equilibrium point where both populations
+            coexist (whether the equilibrium point is stable or not) in
+            cases 3 and 4. Your answer will involve $r_1, a_1, b_1, r_2,
+            a_2, b_2$.
     \end{enumerate}
 \end{problem}
 \begin{solution}
